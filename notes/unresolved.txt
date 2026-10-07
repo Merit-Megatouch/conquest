@@ -2,15 +2,3 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-NVRAMData | conquest.so
-SaveBackBmp | conquest.so
-BitmapWidth(_RADBitmap*) | conquest.so
-MouseRemove(char*) | conquest.so
-BitmapHeight(_RADBitmap*) | conquest.so
-ClearPreSmack() | conquest.so
-AnimationDelay(_MSmack*) | conquest.so
-AnimationAdvance(_MSmack*, unsigned char) | conquest.so
-BitmapGetPalette(_RADBitmap*) | conquest.so
-MousePushAndRemoveAll() | conquest.so
-MousePop() | conquest.so
-NVRAMMap::GamesOpt(xml_gameoptions::GameOptionIndex) const | conquest.so
